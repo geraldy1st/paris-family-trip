@@ -295,6 +295,37 @@
     }
     .ext-note { font-size: .75rem; color: var(--muted); font-weight: 400; }
 
+
+    /* Waitlist */
+    #waitlist { scroll-margin-top: 5.5rem; }
+    .wl-group { margin-top: 1.75rem; }
+    .wl-group:first-of-type { margin-top: 0; }
+    .wl-group-title {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.2rem;
+      margin: 0 0 .85rem;
+      color: var(--ink);
+    }
+    .wl-item h3 { font-size: 1.15rem; }
+    .wl-item .wl-meta {
+      font-size: .8rem; color: var(--muted); margin: 0;
+    }
+    .wl-swap {
+      list-style: none; margin: 0; padding: 0;
+      display: grid; gap: .65rem;
+    }
+    .wl-swap li {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: .85rem 1rem;
+      color: var(--muted);
+      box-shadow: var(--shadow);
+    }
+    .wl-note {
+      margin-top: 1.5rem;
+      font-size: .9rem;
+    }
     .disclaimer {
       font-size: .85rem; color: var(--muted); margin-top: 1.5rem;
     }
@@ -335,6 +366,7 @@
         <li><a href="#day-14" data-i18n="nav14">14 · Plantes</a></li>
         <li><a href="#day-15" data-i18n="nav15">15 · Louvre</a></li>
         <li><a href="#day-16" data-i18n="nav16">16 · Depart</a></li>
+        <li><a href="#waitlist" data-i18n="nav_waitlist">Waitlist</a></li>
       </ul>
       <div class="controls">
         <label class="sr-only" for="lang-select" data-i18n="lang">Language</label>
@@ -611,6 +643,172 @@
       </div>
     </section>
 
+
+    <section id="waitlist">
+      <h2 class="section-title" data-i18n="wl_title">Waitlist backups</h2>
+      <p class="section-sub" data-i18n="wl_intro">Extra stroller-friendly ideas outside the main plan — use if rain, fatigue, long queues, or you want a swap.</p>
+
+      <div class="wl-group">
+        <h3 class="wl-group-title" data-i18n="wl_rain_h">If rain / need indoors</h3>
+        <div class="grid-2">
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl1_title">Musée de l'Orangerie</h3>
+              <p class="wl-meta" data-i18n="wl1_meta">Tuileries</p>
+              <p data-i18n="wl1_body">Water Lilies, short visit, lift + baby spaces, stroller loan at cloakroom.</p>
+              <div class="links">
+                <a class="btn" href="https://www.musee-orangerie.fr/" target="_blank" rel="noopener" data-i18n="wl1_btn">Musée de l'Orangerie</a>
+              </div>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl2_title">Petit Palais — Baby balade</h3>
+              <p data-i18n-html="wl2_body">Baby walk (12–24 months). Slot during the trip: <strong>9 Sep 2026, 10:30</strong> (other dates exist). Booking useful; baby free, adult ticketed.</p>
+              <div class="links">
+                <a class="btn" href="https://www.petitpalais.paris.fr/" target="_blank" rel="noopener" data-i18n="wl2_btn">Petit Palais</a>
+              </div>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl3_title">Cité des bébés</h3>
+              <p class="wl-meta" data-i18n="wl3_meta">Villette</p>
+              <p data-i18n="wl3_body">Dedicated space for little ones (barefoot, no screens), stroller corner; session/ticket required — farther from Créteil.</p>
+              <div class="links">
+                <a class="btn" href="https://www.cite-sciences.fr/fr/au-programme/expos-permanentes/cite-des-bebes" target="_blank" rel="noopener" data-i18n="wl3_btn">Cité des bébés</a>
+              </div>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl4_title">Covered passages</h3>
+              <p class="wl-meta" data-i18n="wl4_meta">e.g. Panoramas / Jouffroy, Grands Boulevards</p>
+              <p data-i18n="wl4_body">Couple stroll under cover, stroller pace; free, no ticket.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wl-group">
+        <h3 class="wl-group-title" data-i18n="wl_parks_h">Parks / outdoors (nature plan B)</h3>
+        <div class="grid-2">
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl5_title">Parc de Bercy</h3>
+              <p class="wl-meta" data-i18n="wl5_meta">12th</p>
+              <p data-i18n="wl5_body">Wide paths, lawns, play areas; also useful in doubtful weather; can continue to Bercy Village.</p>
+              <div class="links">
+                <a class="btn" href="https://www.paris.fr/lieux/parc-de-bercy-grandes-pelouses-5" target="_blank" rel="noopener" data-i18n="wl5_btn">Parc de Bercy · paris.fr</a>
+              </div>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl6_title">Parc André-Citroën</h3>
+              <p class="wl-meta" data-i18n="wl6_meta">15th</p>
+              <p data-i18n="wl6_body">Very stroller-friendly, lawns, water jets in summer; Balard side (line 8 — practical from Créteil).</p>
+              <div class="links">
+                <a class="btn" href="https://www.paris.fr/lieux/parc-andre-citroen-1791" target="_blank" rel="noopener" data-i18n="wl6_btn">Parc André-Citroën · paris.fr</a>
+              </div>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl7_title">Parc Georges-Brassens</h3>
+              <p class="wl-meta" data-i18n="wl7_meta">15th</p>
+              <p data-i18n="wl7_body">Calm, play areas, scent garden; free.</p>
+              <div class="links">
+                <a class="btn" href="https://www.paris.fr/lieux/parc-georges-brassens-1805" target="_blank" rel="noopener" data-i18n="wl7_btn">Parc Georges-Brassens · paris.fr</a>
+              </div>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl8_title">Coulée verte René-Dumont</h3>
+              <p class="wl-meta" data-i18n="wl8_meta">12th</p>
+              <p data-i18n-html="wl8_body">Shaded urban walk toward Vincennes; <strong>caution</strong>: Bastille start often has stairs — prefer a flat stretch (Reuilly / east side).</p>
+              <div class="links">
+                <a class="btn" href="https://www.paris.fr/pages/la-coulee-verte-rene-dumont-l-endroit-ideal-pour-une-rando-urbaine-36101" target="_blank" rel="noopener" data-i18n="wl8_btn">Coulée verte · paris.fr</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wl-group">
+        <h3 class="wl-group-title" data-i18n="wl_couple_h">Couple vibe (baby in stroller)</h3>
+        <div class="grid-2">
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl9_title">Passerelle Simone-de-Beauvoir + Bercy / BnF quays</h3>
+              <p data-i18n="wl9_body">Flat Seine views, photos; free.</p>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl10_title">Palais-Royal gardens</h3>
+              <p data-i18n="wl10_body">Calm paths, tea nearby.</p>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl11_title">Covered / open market of the day</h3>
+              <p data-i18n="wl11_body">Colours, snack; check opening day on site.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wl-group">
+        <h3 class="wl-group-title" data-i18n="wl_creteil_h">Near Créteil (light day / post-Disney recovery)</h3>
+        <div class="grid-2">
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl12_title">Bois de Vincennes (beyond Parc Floral)</h3>
+              <p data-i18n="wl12_body">Lac Daumesnil, paths; half-day without crossing all of Paris.</p>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl13_title">Créteil pause</h3>
+              <p data-i18n="wl13_body">Nap and recharge without a long trip (practical, not “touristy”).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wl-group">
+        <h3 class="wl-group-title" data-i18n="wl_motiv_h">Motivated options only</h3>
+        <div class="grid-2">
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl14_title">Parc de Belleville</h3>
+              <p data-i18n-html="wl14_body">Great view but <strong>hills/stairs</strong>; stay on lower/accessible parts only.</p>
+            </div>
+          </div>
+          <div class="card wl-item">
+            <div class="card-body">
+              <h3 data-i18n="wl15_title">Cité des sciences (classic)</h3>
+              <p data-i18n="wl15_body">Little interest at age 1 outside Cité des bébés.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wl-group">
+        <h3 class="wl-group-title" data-i18n="wl_swap_h">How to slot them in</h3>
+        <ul class="wl-swap">
+          <li data-i18n="wl_swap1">Rain on the 10th → Orangerie instead of a long riverside walk.</li>
+          <li data-i18n="wl_swap2">Too crowded on the 12th → Bercy or André-Citroën instead of Fête de Paris.</li>
+          <li data-i18n="wl_swap3">Tired on the 15th → Bois de Vincennes / Créteil instead of the Louvre.</li>
+          <li data-i18n="wl_swap4">Free slot morning of the 9th → Petit Palais Baby balade if you book.</li>
+        </ul>
+      </div>
+
+      <p class="note wl-note" data-i18n="wl_disclaimer">Reconfirm opening hours, tickets, and accessibility before going. Nothing is booked via this page.</p>
+    </section>
+
     <p class="disclaimer" data-i18n="disclaimer">
       Links marked to official sites open in a new tab. Photos via Unsplash (illustrative). Attraction details drawn from official sites where linked;
       opening hours, fares, and accessibility can change — always recheck before you go.
@@ -696,6 +894,57 @@
         ex_mont: "Skip the summit stairs with a stroller. Enjoy the lower streets and ambience instead.",
         ex_pack_title: "Packing tips",
         ex_pack: "Compact stroller, front baby carrier, layers for September, light jacket for a Seine cruise, snacks &amp; change kit.",
+        nav_waitlist: "Waitlist",
+        wl_title: "Waitlist backups",
+        wl_intro: "Extra stroller-friendly ideas outside the main plan — use if rain, fatigue, long queues, or you want a swap.",
+        wl_rain_h: "If rain / need indoors",
+        wl1_title: "Musée de l'Orangerie", wl1_meta: "Tuileries",
+        wl1_body: "Water Lilies, short visit, lift + baby spaces, stroller loan at cloakroom.",
+        wl1_btn: "Musée de l'Orangerie",
+        wl2_title: "Petit Palais — Baby balade",
+        wl2_body: "Baby walk (12–24 months). Slot during the trip: <strong>9 Sep 2026, 10:30</strong> (other dates exist). Booking useful; baby free, adult ticketed.",
+        wl2_btn: "Petit Palais",
+        wl3_title: "Cité des bébés", wl3_meta: "Villette",
+        wl3_body: "Dedicated space for little ones (barefoot, no screens), stroller corner; session/ticket required — farther from Créteil.",
+        wl3_btn: "Cité des bébés",
+        wl4_title: "Covered passages", wl4_meta: "e.g. Panoramas / Jouffroy, Grands Boulevards",
+        wl4_body: "Couple stroll under cover, stroller pace; free, no ticket.",
+        wl_parks_h: "Parks / outdoors (nature plan B)",
+        wl5_title: "Parc de Bercy", wl5_meta: "12th",
+        wl5_body: "Wide paths, lawns, play areas; also useful in doubtful weather; can continue to Bercy Village.",
+        wl5_btn: "Parc de Bercy · paris.fr",
+        wl6_title: "Parc André-Citroën", wl6_meta: "15th",
+        wl6_body: "Very stroller-friendly, lawns, water jets in summer; Balard side (line 8 — practical from Créteil).",
+        wl6_btn: "Parc André-Citroën · paris.fr",
+        wl7_title: "Parc Georges-Brassens", wl7_meta: "15th",
+        wl7_body: "Calm, play areas, scent garden; free.",
+        wl7_btn: "Parc Georges-Brassens · paris.fr",
+        wl8_title: "Coulée verte René-Dumont", wl8_meta: "12th",
+        wl8_body: "Shaded urban walk toward Vincennes; <strong>caution</strong>: Bastille start often has stairs — prefer a flat stretch (Reuilly / east side).",
+        wl8_btn: "Coulée verte · paris.fr",
+        wl_couple_h: "Couple vibe (baby in stroller)",
+        wl9_title: "Passerelle Simone-de-Beauvoir + Bercy / BnF quays",
+        wl9_body: "Flat Seine views, photos; free.",
+        wl10_title: "Palais-Royal gardens",
+        wl10_body: "Calm paths, tea nearby.",
+        wl11_title: "Covered / open market of the day",
+        wl11_body: "Colours, snack; check opening day on site.",
+        wl_creteil_h: "Near Créteil (light day / post-Disney recovery)",
+        wl12_title: "Bois de Vincennes (beyond Parc Floral)",
+        wl12_body: "Lac Daumesnil, paths; half-day without crossing all of Paris.",
+        wl13_title: "Créteil pause",
+        wl13_body: "Nap and recharge without a long trip (practical, not “touristy”).",
+        wl_motiv_h: "Motivated options only",
+        wl14_title: "Parc de Belleville",
+        wl14_body: "Great view but <strong>hills/stairs</strong>; stay on lower/accessible parts only.",
+        wl15_title: "Cité des sciences (classic)",
+        wl15_body: "Little interest at age 1 outside Cité des bébés.",
+        wl_swap_h: "How to slot them in",
+        wl_swap1: "Rain on the 10th → Orangerie instead of a long riverside walk.",
+        wl_swap2: "Too crowded on the 12th → Bercy or André-Citroën instead of Fête de Paris.",
+        wl_swap3: "Tired on the 15th → Bois de Vincennes / Créteil instead of the Louvre.",
+        wl_swap4: "Free slot morning of the 9th → Petit Palais Baby balade if you book.",
+        wl_disclaimer: "Reconfirm opening hours, tickets, and accessibility before going. Nothing is booked via this page.",
         disclaimer: "Links marked to official sites open in a new tab. Photos via Unsplash (illustrative). Attraction details drawn from official sites where linked; opening hours, fares, and accessibility can change — always recheck before you go. Prepared for your family trip planning; nothing is booked by this page.",
         footer: "<strong>Paris family itinerary</strong> · Créteil base · 8–16 September · Including Disneyland on Friday 11 (10:00–18:00).<br />Useful hubs: ",
         alt8: "Lush park lawns and trees on a sunny day",
@@ -774,6 +1023,57 @@
         ex_mont: "Évitez le sommet (escaliers). Profitez des rues du bas.",
         ex_pack_title: "Conseils bagages",
         ex_pack: "Poussette compacte, porte-bébé ventral, couches pour septembre, veste légère pour croisière, snacks et kit change.",
+        nav_waitlist: "Liste d'attente",
+        wl_title: "Liste d'attente",
+        wl_intro: "Idées poussette hors programme principal — à piocher si pluie, fatigue, file trop longue ou envie de changer.",
+        wl_rain_h: "Si pluie / besoin d'intérieur",
+        wl1_title: "Musée de l'Orangerie", wl1_meta: "Tuileries",
+        wl1_body: "Nymphéas, visite courte, ascenseur + espaces bébé, prêt de poussettes au vestiaire.",
+        wl1_btn: "Musée de l'Orangerie",
+        wl2_title: "Petit Palais — Baby balade",
+        wl2_body: "Baby balade (12–24 mois). Créneau pendant le séjour : <strong>9 sept. 2026, 10h30</strong> (autres dates). Réservation utile ; bébé gratuit, adulte tarifé.",
+        wl2_btn: "Petit Palais",
+        wl3_title: "Cité des bébés", wl3_meta: "Villette",
+        wl3_body: "Espace dédié tout-petits (pieds nus, sans écran), coin poussettes ; sur séance/billet — plus loin depuis Créteil.",
+        wl3_btn: "Cité des bébés",
+        wl4_title: "Passages couverts", wl4_meta: "ex. Panoramas / Jouffroy, Grands Boulevards",
+        wl4_body: "Flânerie couple à l'abri, rythme poussette ; gratuit, sans billet.",
+        wl_parks_h: "Parcs / plein air (plan B nature)",
+        wl5_title: "Parc de Bercy", wl5_meta: "12e",
+        wl5_body: "Allées larges, pelouses, jeux ; utile aussi par temps douteux ; prolongeable vers Bercy Village.",
+        wl5_btn: "Parc de Bercy · paris.fr",
+        wl6_title: "Parc André-Citroën", wl6_meta: "15e",
+        wl6_body: "Très poussette-friendly, pelouses, jets d'eau l'été ; côté Balard (ligne 8 — pratique depuis Créteil).",
+        wl6_btn: "Parc André-Citroën · paris.fr",
+        wl7_title: "Parc Georges-Brassens", wl7_meta: "15e",
+        wl7_body: "Calme, jeux, jardin de senteurs ; gratuit.",
+        wl7_btn: "Parc Georges-Brassens · paris.fr",
+        wl8_title: "Coulée verte René-Dumont", wl8_meta: "12e",
+        wl8_body: "Balade urbaine ombragée vers Vincennes ; <strong>attention</strong> : départ Bastille souvent par escaliers — préférer un tronçon plat (Reuilly / côté est).",
+        wl8_btn: "Coulée verte · paris.fr",
+        wl_couple_h: "Ambiance couple (bébé en poussette)",
+        wl9_title: "Passerelle Simone-de-Beauvoir + quais Bercy / BnF",
+        wl9_body: "Vues plates sur la Seine, photos ; gratuit.",
+        wl10_title: "Jardins du Palais-Royal",
+        wl10_body: "Allées calmes, tea à proximité.",
+        wl11_title: "Marché couvert / ouvert du jour",
+        wl11_body: "Couleurs, en-cas ; vérifier le jour d'ouverture sur place.",
+        wl_creteil_h: "Près de Créteil (journée légère / récup post-Disney)",
+        wl12_title: "Bois de Vincennes (au-delà du Parc Floral)",
+        wl12_body: "Lac Daumesnil, allées ; demi-journée sans traverser tout Paris.",
+        wl13_title: "Pause Créteil",
+        wl13_body: "Sieste et recharge sans long trajet (pratique, pas « touristique »).",
+        wl_motiv_h: "À ne garder qu'en option motivée",
+        wl14_title: "Parc de Belleville",
+        wl14_body: "Belle vue mais <strong>côtes/escaliers</strong> ; rester uniquement sur les parties basses/accessibles.",
+        wl15_title: "Cité des sciences (classique)",
+        wl15_body: "Peu d'intérêt à 1 an hors Cité des bébés.",
+        wl_swap_h: "Comment les glisser",
+        wl_swap1: "Pluie le 10 → Orangerie à la place d'une longue balade au bord de l'eau.",
+        wl_swap2: "Trop de monde le 12 → Bercy ou André-Citroën à la place de la Fête de Paris.",
+        wl_swap3: "Fatigue le 15 → Bois de Vincennes / Créteil à la place du Louvre.",
+        wl_swap4: "Créneau libre le matin du 9 → Baby balade Petit Palais si vous réservez.",
+        wl_disclaimer: "Reconfirmez horaires, billets et accessibilité avant d'y aller. Rien n'est réservé via cette page.",
         disclaimer: "Les liens vers les sites officiels s’ouvrent dans un nouvel onglet. Photos Unsplash (illustratives). Horaires, tarifs et accessibilité peuvent changer — vérifiez avant d’y aller. Rien n’est réservé via cette page.",
         footer: "<strong>Itinéraire famille à Paris</strong> · Base Créteil · 8–16 septembre · Dont Disneyland le vendredi 11 (10h–18h).<br />Liens utiles : ",
         alt8: "Pelouses et arbres d’un parc ensoleillé",
@@ -852,6 +1152,57 @@
         ex_mont: "Evitad la cima (escaleras). Disfrutad las calles de abajo.",
         ex_pack_title: "Consejos de equipaje",
         ex_pack: "Carrito compacto, portabebé ventral, capas para septiembre, chaqueta ligera para el crucero, snacks y kit de cambio.",
+        nav_waitlist: "Lista de espera",
+        wl_title: "Lista de espera",
+        wl_intro: "Ideas con carrito fuera del plan principal — usadlas si llueve, hay cansancio, colas largas o queréis cambiar.",
+        wl_rain_h: "Si llueve / hace falta interior",
+        wl1_title: "Musée de l'Orangerie", wl1_meta: "Tullerías",
+        wl1_body: "Nenúfares, visita corta, ascensor + espacios bebé, préstamo de carritos en consigna.",
+        wl1_btn: "Musée de l'Orangerie",
+        wl2_title: "Petit Palais — Baby balade",
+        wl2_body: "Baby balade (12–24 meses). Hueco durante el viaje: <strong>9 sep. 2026, 10:30</strong> (hay más fechas). Reserva útil; bebé gratis, adulto de pago.",
+        wl2_btn: "Petit Palais",
+        wl3_title: "Cité des bébés", wl3_meta: "Villette",
+        wl3_body: "Espacio dedicado a bebés (pies descalzos, sin pantallas), zona carritos; hace falta sesión/entrada — más lejos desde Créteil.",
+        wl3_btn: "Cité des bébés",
+        wl4_title: "Pasajes cubiertos", wl4_meta: "p. ej. Panoramas / Jouffroy, Grands Boulevards",
+        wl4_body: "Paseo de pareja bajo techo, ritmo carrito; gratis, sin entrada.",
+        wl_parks_h: "Parques / exterior (plan B naturaleza)",
+        wl5_title: "Parc de Bercy", wl5_meta: "12.º",
+        wl5_body: "Pasillos anchos, césped, juegos; también útil con tiempo dudoso; se puede seguir hacia Bercy Village.",
+        wl5_btn: "Parc de Bercy · paris.fr",
+        wl6_title: "Parc André-Citroën", wl6_meta: "15.º",
+        wl6_body: "Muy apto para carrito, césped, chorros de agua en verano; lado Balard (línea 8 — práctico desde Créteil).",
+        wl6_btn: "Parc André-Citroën · paris.fr",
+        wl7_title: "Parc Georges-Brassens", wl7_meta: "15.º",
+        wl7_body: "Tranquilo, juegos, jardín de aromas; gratis.",
+        wl7_btn: "Parc Georges-Brassens · paris.fr",
+        wl8_title: "Coulée verte René-Dumont", wl8_meta: "12.º",
+        wl8_body: "Paseo urbano sombreado hacia Vincennes; <strong>atención</strong>: el inicio en Bastille suele tener escaleras — preferid un tramo llano (Reuilly / lado este).",
+        wl8_btn: "Coulée verte · paris.fr",
+        wl_couple_h: "Ambiente de pareja (bebé en carrito)",
+        wl9_title: "Passerelle Simone-de-Beauvoir + muelles Bercy / BnF",
+        wl9_body: "Vistas llanas del Sena, fotos; gratis.",
+        wl10_title: "Jardines del Palais-Royal",
+        wl10_body: "Caminos tranquilos, té cerca.",
+        wl11_title: "Mercado cubierto / al aire libre del día",
+        wl11_body: "Colores, snack; comprobad el día de apertura in situ.",
+        wl_creteil_h: "Cerca de Créteil (día ligero / recuperación post-Disney)",
+        wl12_title: "Bois de Vincennes (más allá del Parc Floral)",
+        wl12_body: "Lac Daumesnil, caminos; media jornada sin cruzar todo París.",
+        wl13_title: "Pausa Créteil",
+        wl13_body: "Siesta y recarga sin un viaje largo (práctico, no “turístico”).",
+        wl_motiv_h: "Solo si estáis muy motivados",
+        wl14_title: "Parc de Belleville",
+        wl14_body: "Gran vista pero <strong>cuestas/escaleras</strong>; quedaos solo en las partes bajas/accesibles.",
+        wl15_title: "Cité des sciences (clásica)",
+        wl15_body: "Poco interés a la edad de 1 año fuera de la Cité des bébés.",
+        wl_swap_h: "Cómo encajarlas",
+        wl_swap1: "Lluvia el 10 → Orangerie en lugar de un largo paseo junto al río.",
+        wl_swap2: "Demasiada gente el 12 → Bercy o André-Citroën en lugar de la Fête de Paris.",
+        wl_swap3: "Cansancio el 15 → Bois de Vincennes / Créteil en lugar del Louvre.",
+        wl_swap4: "Hueco libre la mañana del 9 → Baby balade Petit Palais si reserváis.",
+        wl_disclaimer: "Reconfirmad horarios, entradas y accesibilidad antes de ir. Nada está reservado desde esta página.",
         disclaimer: "Los enlaces a sitios oficiales se abren en una pestaña nueva. Fotos de Unsplash (ilustrativas). Horarios, precios y accesibilidad pueden cambiar — comprobad antes de ir. Nada está reservado desde esta página.",
         footer: "<strong>Itinerario familiar en París</strong> · Base Créteil · 8–16 de septiembre · Incluye Disneyland el viernes 11 (10:00–18:00).<br />Enlaces útiles: ",
         alt8: "Césped y árboles de un parque soleado",
